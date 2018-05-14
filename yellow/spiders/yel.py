@@ -10,7 +10,7 @@ class YelSpider(scrapy.Spider):
     allowed_domains = ['www.sstt12.com']
     start_urls = ['http://www.sstt12.com/Art/AtrNr/20914.html','http://www.sstt12.com/Art/AtrNr/20915.html']
     url_next = 'http://www.sstt12.com/Art/AtrNr/{}.html'
-
+# hahah
     def parse(self, response):
         get_rs = response.xpath('/html/body/div[6]/div/div[4]/img').extract()
         item = YellowItem()
